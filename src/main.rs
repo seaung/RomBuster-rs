@@ -1,6 +1,8 @@
 mod trigger;
 mod rombuster;
+mod cli;
 
 fn main() {
-    println!("Hello, world!");
+    let cli = cli::RomBusterCLI::new();
+    cli.start();
 }
